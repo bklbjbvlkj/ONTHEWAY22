@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="control-panel.css">
+</head>
+<body>
+    <div class="container">
+        <h2>لوحة التحكم</h2>
+
+        <!-- حقول البيانات الشخصية -->
+        <div id="personal-info">
+            <p id="firstName"></p>
+            <p id="lastName"></p>
+            <p id="address"></p>
+            <p id="licenseNumber"></p>
+            <p id="vehicleType"></p>
+            <p id="phoneNumber"></p>
+        </div>
+
+        <!-- حقول التعديلات -->
+        <input type="text" id="pickupLocation" placeholder="مكان استلام الاوردر">
+        <input type="text" id="deliveryLocation" placeholder="مكان التسليم">
+        <input type="text" id="deliveryTime" placeholder="وقت التسليم">
+        <input type="number" id="orderCount" placeholder="عدد الطلبات">
+        <input type="text" id="orderValue" placeholder="قيمة الطلب">
+        <input type="text" id="dailyTotal" placeholder="إجمالي الدفع اليومي">
+        <input type="text" id="totalOrdersValue" placeholder="إجمالي قيمة الطلبات">
+        <input type="text" id="commission" placeholder="إجمالي عمولة الطيار">
+        <input type="text" id="totalMoney" placeholder="إجمالي أموالك">
+        <button class="button" onclick="saveData()">حفظ التعديلات</button>
+    </div>
+
+    <script src="control-panel.js"></script>
+</body>
+</html>
